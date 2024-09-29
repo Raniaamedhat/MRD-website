@@ -1,0 +1,344 @@
+/******************Fonts*********************/
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Open Sans Medium';
+    src: url(../fonts/OpenSans-Medium.ttf);
+}
+/********************General*****************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color-:#1a1a1a;
+    --body2-color-:#b8863d;
+    --body3-color-:#516270;
+    --body4-color-:#544d3d;
+    --main-text-h3-:#393b3d;
+    --section-color:#F6F6F6;
+    --dark2-color:#161A30;
+    
+}
+body{
+    background-color: var(--body-color-);
+    font-family: 'Open Sans';
+    font-family: 'Open Sans Medium';
+}
+a{
+    text-decoration: none;
+}
+/*under line*/
+
+.line ::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--body2-color-);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%) ;
+}
+/********************seaction one*****************/
+/*****footer********/
+.footer-info{
+    background-color: var(--body2-color-);
+}
+.footer-info a{
+    color: white;
+    padding: 15px;
+    font-size: large;
+    
+}
+/******
+navbar
+******/
+.navbar img{
+    width: 120px;
+    
+}
+.navbar ul{
+    padding-top: 10px;
+    font-size: large;
+}
+.navbar .a{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar-brand{
+    color: var(--body2-color-);
+}
+
+/***********
+Start Video
+***********/
+.video {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 100px );
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*******************
+End Video
+*******************/
+/******************
+start our company
+*******************/
+.main-title{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+}
+.main-title hr{
+    text-align: center;
+    width: 25px;
+}
+/*************
+end our company
+**************/
+/******************
+Start developers 
+*******************/
+
+.our-developers .nav-link{
+    width: 55px;
+    border: 2px solid #b8863d;
+    border-radius: 27px;
+    padding: 16px;
+    margin: 12px;
+    background-color: var(--body-color-);
+}
+.our-developers .nav-link:hover{
+    background-color: var(--body2-color-);
+}
+#nav-tab a{
+    color: white;
+    font-size: 20px;
+}
+
+.image-container {
+    position: relative; /* Establish a reference for absolute positioning */
+}
+.image-container img{
+    height: 550px;
+    width: 428px;
+    object-fit: cover;
+    padding: 50px;
+    border-radius: 64px;
+    opacity: 1;
+}
+.image-container img:hover{
+    opacity: 0.5;
+}
+
+.overlay-text {
+    position: absolute; /* Position relative to the container */
+    top: 20%;
+    left: 40%;
+    transform: translate(-24%, -65%); /* Center the text */
+    color: #fff; /* Ensure text visibility */
+    font-size: 22px; /* Adjust font size as needed */
+    font-weight: bold;
+    font-family:"Arial", Sans-serif;
+    text-align: center; /* Optional for centered text */
+}
+/******************
+End developers
+*******************/
+
+
+
+/******************
+start last seaction
+*******************/
+.last-seaction{
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: var(--body4-color-);
+}
+.last-seaction a{
+    color: white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.last-seaction a:hover{
+    color: var(--body2-color-);
+}
+.last-seaction img{
+    width: 150px;
+}
+/****************
+end last seaction
+*****************/
+/**************************************************************Start projects page******************************************/
+#proj-color{
+    color: var(--body2-color-);
+}
+
+/**************************************************************Start contact us page******************************************/
+.contact-us-img{
+    width: 75%;
+}
+/************************* START features*********************/
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left:50%;
+    transform: translateX(-50%)
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    color: var(--section-color);
+}
+.features .feat h4{
+    color: var(--body2-color-);
+}
+/************************* END features************************/
+/**************************************************************Start emaarmisr page******************************************/
+/***************
+START seaction-1
+***************/
+.landing {
+    
+    object-fit: cover;
+    min-height: calc(100vh - 72px);
+    width: 100vw;
+    margin-top: 40px;
+    
+}
+.seaction-1-title{
+    display: flex;
+    text-align:right;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+}
+.line-seaction-1 ::after{
+    content: "";
+    width: 280px;
+    height: 2px;
+    background-color: var(--body2-color-);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(140%) ;
+}
+.seaction-1-img{
+    padding-bottom: 50px;
+}
+.owl-seaction-1 .owl-item img{
+    display: block;
+    width: 75vw;
+    height: 75vh;
+    margin: 5px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+/**************
+END seaction-1
+**************/
+/**************
+Start seaction-2
+**************/
+.seaction-2{
+    color: white;
+    margin-bottom: 100px;
+}
+.main-seac4{
+    color: var(--body2-color-);
+    
+}
+.seaction-2 .seaction-2-text{
+    font-size: large;
+}
+/**************
+END seaction-2
+**************/
+/**************
+Start seaction-3
+**************/
+.seaction-3{
+    color: white;
+    margin-bottom: 100px;
+}
+.seaction-3 .emaarmisr-list{
+    font-size: large;
+}
+
+/**************
+END seaction-3
+**************/
+/**************
+START seaction-4
+**************/
+.seaction-4{
+    font-size: large  ;
+    color: white;
+    margin-bottom: 150px;
+}
+.color-span{
+    color: var(--body2-color-);
+}
+/**************
+END seaction-4
+**************/
+/**************************************************************End emaarmisr page******************************************/
+/**************************************************************start Hyde park page******************************************/
+
+.main-list{
+    font-size: large;
+}
+/**************************************************************End Hyde park page******************************************/
+/**************************************************************start Misr Italia page******************************************/
+.sec4-list span{
+    color: var(--body2-color-);
+}
+
+/**************************************************************End Misr Italia page******************************************/
+/**************************************************************End hassan allam page******************************************/
+.main-title-projects{
+    display: inline-block;
+    background-color: var(--main-text-h3-);
+}
+.hassan-allam-sec3 h4{
+    color: var(--body2-color-);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hassan-allam-sec3 img{
+    width: 60%;
+    border-radius: 20px;
+}
+.hassan-allam-sec3 .para-sec3{
+    padding: 100px 0px;
+    font-size: large;
+}
+.hassan-allam-sec3 span{
+    color: var(--body2-color-);
+}
+/**************************************************************End hassan allam page******************************************/
+
+/**************************************************************star mountain view page******************************************/
+
+/**************************************************************End mountain view page******************************************/
